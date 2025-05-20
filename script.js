@@ -6,7 +6,7 @@ const volumeResult = document.querySelector('.volume-result');
 const massResult = document.querySelector('.mass-result');
 
 convertBtn.addEventListener('click', () => {
-    if (input.value === '') {
+    if (input.value === '' || input.value <= 0) {
         alert('invalid input')
     } else {
         calcLength(input.value);
