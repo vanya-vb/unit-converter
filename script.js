@@ -6,8 +6,9 @@ const volumeResult = document.querySelector('.volume-result');
 const massResult = document.querySelector('.mass-result');
 
 convertBtn.addEventListener('click', () => {
-    if (input.value === '' || input.value <= 0) {
-        alert('invalid input')
+    if (isNaN(input.value) || Number(input.value) <= 0) {
+        alert('Please enter a valid positive number');
+        return;
     } else {
         calcLength(input.value);
         calcVolume(input.value);

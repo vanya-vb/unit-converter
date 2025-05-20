@@ -12,7 +12,6 @@ body {
     height: 100vh;
 
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -24,20 +23,25 @@ p {
     font-size: 1rem;
 }
 
-.input-section {
-    background-color: #6943FF;
-    color: #FFFFFF;
-    height: 40%;
+.input-section,
+.calc-section,
+.calc-section div {
     padding: 30px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
+.input-section {
+    background-color: #6943FF;
+    color: #FFFFFF;
+    height: 40%;
+
+    justify-content: space-between;
+}
+
 .user-input {
-    align-self: center;
     width: 120px;
     height: 80px;
     background-color: unset;
@@ -51,7 +55,6 @@ p {
 
 .input-section button {
     cursor: pointer;
-    align-self: center;
     background-color: #FFFFFF;
     color: #3D3D3D;
     font-weight: 600;
@@ -63,12 +66,8 @@ p {
 
 .calc-section {
     background-color: #F4F4F4;
-    padding: 30px;
-
     height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     justify-content: center;
     gap: 30px;
 }
@@ -77,10 +76,8 @@ p {
     background-color: #FFFFFF;
     width: 100%;
     max-height: 110px;
+    padding: 0;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 15px;
     flex-grow: 1;
